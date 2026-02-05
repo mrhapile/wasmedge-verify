@@ -1,19 +1,23 @@
 # wasmedge-verify
 
-A minimal, production-quality CLI tool for verifying WebAssembly modules using the WasmEdge C API.
-Currently in Phase 1 (Prototype/Skeleton).
+A lightweight, production-quality CLI tool for verifying WebAssembly modules using the [WasmEdge C API](https://wasmedge.org/docs/embed/c/intro).
 
-## Overview
+This tool serves as a minimal example of how to build standalone ecosystem tools that interface with WasmEdge without linking the full runtime for execution.
 
-`wasmedge-verify` is designed to parse and validate `.wasm` binaries. It serves as a lightweight utility to check WebAssembly modules before execution.
+## Features
+
+- **Parse**: Verifies that a `.wasm` file can be successfully loaded and parsed into an AST.
+- **Validate**: Performs WebAssembly validation checks (types, structure) on the module.
+- **Minimal Dependencies**: Links only against the WasmEdge C API shared library.
 
 ## Build Instructions
 
-Requirements:
+### Prerequisites
 - CMake 3.10+
-- C++17 compliant compiler
-- Linux or macOS
+- C++17 compliant compiler (GCC/Clang)
+- WasmEdge installed system-wide (e.g., via Homebrew or apt)
 
+### Building
 ```bash
 mkdir build && cd build
 cmake ..
@@ -22,17 +26,30 @@ make
 
 ## Usage
 
-### Parse a WASM file
+### 1. Parse a Module
+Checks if the file is a syntactically correct WebAssembly binary.
 ```bash
 ./wasmedge-verify parse my_module.wasm
 ```
+**Output:**
+- `[OK] WASM parsed successfully` (Exit 0)
+- `[FAIL] Failed to parse WASM file...` (Exit 1)
 
-### Validate a WASM file
+### 2. Validate a Module
+Performs validation logic to ensure the module is safe to execute.
 ```bash
 ./wasmedge-verify validate my_module.wasm
 ```
+**Output:**
+- `[OK] WASM validation passed` (Exit 0)
+- `[FAIL] WASM validation failed` (Exit 1)
 
-## Phase 1 Status
-- [x] Project Skeleton
-- [x] CLI Argument Parsing
-- [ ] WasmEdge Integration (Planned for Phase 2)
+## Development
+
+Run the test suite to verify functionality:
+```bash
+./tests/test_cli.sh
+```
+
+## License
+MIT

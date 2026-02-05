@@ -1,20 +1,44 @@
 # Design Document - wasmedge-verify
 
 ## Purpose
-`wasmedge-verify` acts as a specialized CLI tool for verifying and investigating WebAssembly binaries. 
-While WasmEdge itself provides a runtime CLI, this tool focuses specifically on the *verification* and *parsing* stages, providing a deeper insight into module validity without necessarily executing them.
+`wasmedge-verify` acts as a specialized, lightweight CLI tool for verifying and investigating WebAssembly binaries. 
+While WasmEdge itself provides a runtime CLI, this tool demonstrates how to build custom tooling using the public C API.
 
-It also serves as a prototype for extending the core WasmEdge CLI capabilities using the public C API.
+## Architecture
 
-## Architecture (Phase 1)
-The application is structured as a simple console application with the following components:
+The application is structured as a modular console application:
 
-1.  **Main Entry (`main.cpp`)**: Minimal entry point that hands off control to the CLI dispatcher.
+1.  **Main Entry (`main.cpp`)**: 
+    - Minimal entry point.
+    - Setup and teardown of global resources (if any).
+    - Delegates to `runCLI`.
+
 2.  **CLI Dispatcher (`cli.cpp`/`cli.h`)**:
     - Responsible for parsing `argc`/`argv`.
     - Routes commands (`parse`, `validate`) to their respective handlers.
-    - Manages user output and error reporting.
+    - Handles top-level error reporting and usage info.
 
-## Future Phases
-- **Phase 2**: Link against WasmEdge C API to implement actual parsing and validation logic.
-- **Phase 3**: specific section inspection (Imports, Exports, Memory).
+3.  **Command Handlers**:
+    - **Parse (`parse.cpp`)**: Uses `WasmEdge_LoaderContext` to load a module into an AST. This confirms the binary format is correct.
+    - **Validate (`validate.cpp`)**: Uses `WasmEdge_VMContext` to perform formal validation (type checking, etc.).
+
+## Integration with WasmEdge
+
+- **C API Only**: The tool strictly uses `<wasmedge/wasmedge.h>` and links against `libwasmedge`.
+- **No Internal Headers**: It does not depend on internal WasmEdge C++ headers, ensuring ABI stability and compatibility with standard WasmEdge installations.
+
+## CI/CD Friendliness
+
+The tool is designed to be used in CI/CD pipelines:
+- **Exit Codes**:
+    - `0`: Success (Valid/Parsed).
+    - `1`: Failure (Invalid/Error).
+- **Streams**:
+    - Success messages go to `stdout`.
+    - Error messages go to `stderr`.
+
+## Future Extensions
+Potential future enhancements (out of scope for current version):
+- **Inspect**: Print imports/exports.
+- **Convert**: AOT compilation trigger.
+- **Statistics**: Count instructions or sections.
