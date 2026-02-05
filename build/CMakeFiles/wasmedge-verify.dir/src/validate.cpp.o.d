@@ -1,6 +1,5 @@
-CMakeFiles/wasmedge-verify.dir/src/cli.cpp.o: \
-  /Users/mrhapile/project/wasmedge-verify/src/cli.cpp \
-  /Users/mrhapile/project/wasmedge-verify/src/cli.h \
+CMakeFiles/wasmedge-verify.dir/src/validate.cpp.o: \
+  /Users/mrhapile/project/wasmedge-verify/src/validate.cpp \
   /Users/mrhapile/project/wasmedge-verify/src/commands.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/min.h \
@@ -791,4 +790,24 @@ CMakeFiles/wasmedge-verify.dir/src/cli.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
+  /opt/homebrew/include/wasmedge/wasmedge.h \
+  /opt/homebrew/include/wasmedge/wasmedge_basic.h \
+  /opt/homebrew/include/wasmedge/wasmedge_context.h \
+  /opt/homebrew/include/wasmedge/enum_configure.h \
+  /opt/homebrew/include/wasmedge/enum.inc \
+  /opt/homebrew/include/wasmedge/enum_errcode.h \
+  /opt/homebrew/include/wasmedge/enum_types.h \
+  /opt/homebrew/include/wasmedge/int128.h \
+  /opt/homebrew/include/wasmedge/version.h \
+  /opt/homebrew/include/wasmedge/wasmedge_ast.h \
+  /opt/homebrew/include/wasmedge/wasmedge_value.h \
+  /opt/homebrew/include/wasmedge/wasmedge_compiler.h \
+  /opt/homebrew/include/wasmedge/wasmedge_configure.h \
+  /opt/homebrew/include/wasmedge/wasmedge_execution.h \
+  /opt/homebrew/include/wasmedge/wasmedge_instance.h \
+  /opt/homebrew/include/wasmedge/wasmedge_plugin.h \
+  /opt/homebrew/include/wasmedge/wasmedge_tools.h \
+  /opt/homebrew/include/wasmedge/wasmedge_vm.h \
+  /opt/homebrew/include/wasmedge/wasmedge_deprecated.h \
+  /opt/homebrew/include/wasmedge/wasmedge_experimental.h

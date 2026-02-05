@@ -177,6 +177,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wasmedge-verify.dir/build.make CMakeFiles/wasmedge-verify.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/parse.o: src/parse.cpp.o
+.PHONY : src/parse.o
+
+# target to build an object file
+src/parse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wasmedge-verify.dir/build.make CMakeFiles/wasmedge-verify.dir/src/parse.cpp.o
+.PHONY : src/parse.cpp.o
+
+src/parse.i: src/parse.cpp.i
+.PHONY : src/parse.i
+
+# target to preprocess a source file
+src/parse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wasmedge-verify.dir/build.make CMakeFiles/wasmedge-verify.dir/src/parse.cpp.i
+.PHONY : src/parse.cpp.i
+
+src/parse.s: src/parse.cpp.s
+.PHONY : src/parse.s
+
+# target to generate assembly for a file
+src/parse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wasmedge-verify.dir/build.make CMakeFiles/wasmedge-verify.dir/src/parse.cpp.s
+.PHONY : src/parse.cpp.s
+
+src/validate.o: src/validate.cpp.o
+.PHONY : src/validate.o
+
+# target to build an object file
+src/validate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wasmedge-verify.dir/build.make CMakeFiles/wasmedge-verify.dir/src/validate.cpp.o
+.PHONY : src/validate.cpp.o
+
+src/validate.i: src/validate.cpp.i
+.PHONY : src/validate.i
+
+# target to preprocess a source file
+src/validate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wasmedge-verify.dir/build.make CMakeFiles/wasmedge-verify.dir/src/validate.cpp.i
+.PHONY : src/validate.cpp.i
+
+src/validate.s: src/validate.cpp.s
+.PHONY : src/validate.s
+
+# target to generate assembly for a file
+src/validate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wasmedge-verify.dir/build.make CMakeFiles/wasmedge-verify.dir/src/validate.cpp.s
+.PHONY : src/validate.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +240,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/parse.o"
+	@echo "... src/parse.i"
+	@echo "... src/parse.s"
+	@echo "... src/validate.o"
+	@echo "... src/validate.i"
+	@echo "... src/validate.s"
 .PHONY : help
 
 

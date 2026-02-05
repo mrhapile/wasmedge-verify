@@ -10,6 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/mrhapile/project/wasmedge-verify/src/cli.cpp" "CMakeFiles/wasmedge-verify.dir/src/cli.cpp.o" "gcc" "CMakeFiles/wasmedge-verify.dir/src/cli.cpp.o.d"
   "/Users/mrhapile/project/wasmedge-verify/src/main.cpp" "CMakeFiles/wasmedge-verify.dir/src/main.cpp.o" "gcc" "CMakeFiles/wasmedge-verify.dir/src/main.cpp.o.d"
+  "/Users/mrhapile/project/wasmedge-verify/src/parse.cpp" "CMakeFiles/wasmedge-verify.dir/src/parse.cpp.o" "gcc" "CMakeFiles/wasmedge-verify.dir/src/parse.cpp.o.d"
+  "/Users/mrhapile/project/wasmedge-verify/src/validate.cpp" "CMakeFiles/wasmedge-verify.dir/src/validate.cpp.o" "gcc" "CMakeFiles/wasmedge-verify.dir/src/validate.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

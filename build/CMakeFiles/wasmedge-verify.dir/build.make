@@ -100,19 +100,52 @@ CMakeFiles/wasmedge-verify.dir/src/cli.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wasmedge-verify.dir/src/cli.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrhapile/project/wasmedge-verify/src/cli.cpp -o CMakeFiles/wasmedge-verify.dir/src/cli.cpp.s
 
+CMakeFiles/wasmedge-verify.dir/src/parse.cpp.o: CMakeFiles/wasmedge-verify.dir/flags.make
+CMakeFiles/wasmedge-verify.dir/src/parse.cpp.o: /Users/mrhapile/project/wasmedge-verify/src/parse.cpp
+CMakeFiles/wasmedge-verify.dir/src/parse.cpp.o: CMakeFiles/wasmedge-verify.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mrhapile/project/wasmedge-verify/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/wasmedge-verify.dir/src/parse.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/wasmedge-verify.dir/src/parse.cpp.o -MF CMakeFiles/wasmedge-verify.dir/src/parse.cpp.o.d -o CMakeFiles/wasmedge-verify.dir/src/parse.cpp.o -c /Users/mrhapile/project/wasmedge-verify/src/parse.cpp
+
+CMakeFiles/wasmedge-verify.dir/src/parse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wasmedge-verify.dir/src/parse.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrhapile/project/wasmedge-verify/src/parse.cpp > CMakeFiles/wasmedge-verify.dir/src/parse.cpp.i
+
+CMakeFiles/wasmedge-verify.dir/src/parse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wasmedge-verify.dir/src/parse.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrhapile/project/wasmedge-verify/src/parse.cpp -o CMakeFiles/wasmedge-verify.dir/src/parse.cpp.s
+
+CMakeFiles/wasmedge-verify.dir/src/validate.cpp.o: CMakeFiles/wasmedge-verify.dir/flags.make
+CMakeFiles/wasmedge-verify.dir/src/validate.cpp.o: /Users/mrhapile/project/wasmedge-verify/src/validate.cpp
+CMakeFiles/wasmedge-verify.dir/src/validate.cpp.o: CMakeFiles/wasmedge-verify.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mrhapile/project/wasmedge-verify/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/wasmedge-verify.dir/src/validate.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/wasmedge-verify.dir/src/validate.cpp.o -MF CMakeFiles/wasmedge-verify.dir/src/validate.cpp.o.d -o CMakeFiles/wasmedge-verify.dir/src/validate.cpp.o -c /Users/mrhapile/project/wasmedge-verify/src/validate.cpp
+
+CMakeFiles/wasmedge-verify.dir/src/validate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wasmedge-verify.dir/src/validate.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrhapile/project/wasmedge-verify/src/validate.cpp > CMakeFiles/wasmedge-verify.dir/src/validate.cpp.i
+
+CMakeFiles/wasmedge-verify.dir/src/validate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wasmedge-verify.dir/src/validate.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrhapile/project/wasmedge-verify/src/validate.cpp -o CMakeFiles/wasmedge-verify.dir/src/validate.cpp.s
+
 # Object files for target wasmedge-verify
 wasmedge__verify_OBJECTS = \
 "CMakeFiles/wasmedge-verify.dir/src/main.cpp.o" \
-"CMakeFiles/wasmedge-verify.dir/src/cli.cpp.o"
+"CMakeFiles/wasmedge-verify.dir/src/cli.cpp.o" \
+"CMakeFiles/wasmedge-verify.dir/src/parse.cpp.o" \
+"CMakeFiles/wasmedge-verify.dir/src/validate.cpp.o"
 
 # External object files for target wasmedge-verify
 wasmedge__verify_EXTERNAL_OBJECTS =
 
 wasmedge-verify: CMakeFiles/wasmedge-verify.dir/src/main.cpp.o
 wasmedge-verify: CMakeFiles/wasmedge-verify.dir/src/cli.cpp.o
+wasmedge-verify: CMakeFiles/wasmedge-verify.dir/src/parse.cpp.o
+wasmedge-verify: CMakeFiles/wasmedge-verify.dir/src/validate.cpp.o
 wasmedge-verify: CMakeFiles/wasmedge-verify.dir/build.make
+wasmedge-verify: /opt/homebrew/lib/libwasmedge.dylib
 wasmedge-verify: CMakeFiles/wasmedge-verify.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mrhapile/project/wasmedge-verify/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable wasmedge-verify"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mrhapile/project/wasmedge-verify/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable wasmedge-verify"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wasmedge-verify.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

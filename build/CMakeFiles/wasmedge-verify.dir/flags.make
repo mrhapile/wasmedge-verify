@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/mrhapile/project/wasmedge-verify/src
+CXX_INCLUDES = -I/Users/mrhapile/project/wasmedge-verify/src -isystem /opt/homebrew/include
 
 CXX_FLAGSarm64 = -std=c++17 -arch arm64 -Wall -Wextra -Wpedantic
 

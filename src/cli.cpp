@@ -1,4 +1,5 @@
 #include "cli.h"
+#include "commands.h"
 #include <iostream>
 #include <string>
 #include <string_view>
@@ -27,8 +28,7 @@ int runCLI(int argc, char *argv[]) {
       return 1;
     }
     std::string_view filename = argv[2];
-    std::cout << "parse command invoked for " << filename << "\n";
-    return 0;
+    return runParse(filename);
   } else if (command == "validate") {
     if (argc < 3) {
       std::cerr
@@ -36,8 +36,7 @@ int runCLI(int argc, char *argv[]) {
       return 1;
     }
     std::string_view filename = argv[2];
-    std::cout << "validate command invoked for " << filename << "\n";
-    return 0;
+    return runValidate(filename);
   } else {
     std::cerr << "Error: Unknown command '" << command << "'.\n";
     printUsage(argv[0]);

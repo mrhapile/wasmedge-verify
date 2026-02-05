@@ -1374,3 +1374,556 @@ events:
       LTO support using: LLVM version 17.0.0 (static support for 29, runtime is 29)
       TAPI support using: Apple TAPI version 17.0.0 (tapi-1700.3.8)
 ...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:17 (find_package)"
+    name: "WasmEdge"
+    configs:
+      -
+        filename: "WasmEdgeConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "wasmedge-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "WasmEdge"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/Users/mrhapile/project/wasmedge-verify/build/CMakeFiles/pkgRedirects/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/mrhapile/project/wasmedge-verify/build/CMakeFiles/pkgRedirects/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/mrhapile/.krew/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/mrhapile/.krew/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/mrhapile/.nvm/versions/node/v24.12.0/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/mrhapile/.nvm/versions/node/v24.12.0/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/mrhapile/.antigravity/antigravity/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/mrhapile/.antigravity/antigravity/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/System/Cryptexes/App/usr/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/System/Cryptexes/App/usr/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/go/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/go/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/mrhapile/.cargo/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/mrhapile/.cargo/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/mrhapile/.wasmedge/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/mrhapile/.wasmedge/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/mrhapile/go/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/mrhapile/go/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Developer/CommandLineTools/Library/Frameworks/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Developer/CommandLineTools/Library/Frameworks/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Frameworks/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Frameworks/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/System/Library/Frameworks/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/System/Library/Frameworks/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/WasmEdgeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/wasmedge-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "/Users/mrhapile/.krew/bin"
+        - "/Users/mrhapile/.nvm/versions/node/v24.12.0/bin"
+        - "/Users/mrhapile/.antigravity/antigravity/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/go/bin"
+        - "/opt/homebrew/bin"
+        - "/Users/mrhapile/.krew/bin"
+        - "/Users/mrhapile/.nvm/versions/node/v24.12.0/bin"
+        - "/Users/mrhapile/.antigravity/antigravity/bin"
+        - "/Users/mrhapile/.cargo/bin"
+        - "/Users/mrhapile/.wasmedge/bin"
+        - "/Users/mrhapile/go/bin"
+        - "/Users/mrhapile/go/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "cmake/FindWasmEdge.cmake:4 (find_path)"
+      - "CMakeLists.txt:20 (find_package)"
+    mode: "path"
+    variable: "WASMEDGE_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "wasmedge/wasmedge.h"
+    candidate_directories:
+      - "/Users/mrhapile/.krew/bin/"
+      - "/Users/mrhapile/.nvm/versions/node/v24.12.0/bin/"
+      - "/Users/mrhapile/.antigravity/antigravity/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/usr/local/go/bin/"
+      - "/opt/homebrew/bin/"
+      - "/Users/mrhapile/.cargo/bin/"
+      - "/Users/mrhapile/.wasmedge/bin/"
+      - "/Users/mrhapile/go/bin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/include/"
+      - "/opt/homebrew/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/sw/include/"
+      - "/sw/"
+      - "/opt/local/include/"
+      - "/opt/local/"
+      - "/usr/include/X11/"
+      - "/Users/mrhapile/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/Network/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+      - "/opt/homebrew/include/"
+      - "/usr/local/include/"
+      - "/usr/include/"
+      - "/Users/mrhapile/.wasmedge/include/"
+    searched_directories:
+      - "/Users/mrhapile/.krew/bin/wasmedge.framework/Headers/wasmedge.h"
+      - "/Users/mrhapile/.nvm/versions/node/v24.12.0/bin/wasmedge.framework/Headers/wasmedge.h"
+      - "/Users/mrhapile/.antigravity/antigravity/bin/wasmedge.framework/Headers/wasmedge.h"
+      - "/usr/local/bin/wasmedge.framework/Headers/wasmedge.h"
+      - "/System/Cryptexes/App/usr/bin/wasmedge.framework/Headers/wasmedge.h"
+      - "/usr/bin/wasmedge.framework/Headers/wasmedge.h"
+      - "/bin/wasmedge.framework/Headers/wasmedge.h"
+      - "/usr/sbin/wasmedge.framework/Headers/wasmedge.h"
+      - "/sbin/wasmedge.framework/Headers/wasmedge.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/wasmedge.framework/Headers/wasmedge.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/wasmedge.framework/Headers/wasmedge.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/wasmedge.framework/Headers/wasmedge.h"
+      - "/usr/local/go/bin/wasmedge.framework/Headers/wasmedge.h"
+      - "/opt/homebrew/bin/wasmedge.framework/Headers/wasmedge.h"
+      - "/Users/mrhapile/.cargo/bin/wasmedge.framework/Headers/wasmedge.h"
+      - "/Users/mrhapile/.wasmedge/bin/wasmedge.framework/Headers/wasmedge.h"
+      - "/Users/mrhapile/go/bin/wasmedge.framework/Headers/wasmedge.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/wasmedge.framework/Headers/wasmedge.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/wasmedge.framework/Headers/wasmedge.h"
+      - "/opt/homebrew/include/wasmedge.framework/Headers/wasmedge.h"
+      - "/opt/homebrew/wasmedge.framework/Headers/wasmedge.h"
+      - "/usr/local/include/wasmedge.framework/Headers/wasmedge.h"
+      - "/usr/local/wasmedge.framework/Headers/wasmedge.h"
+      - "/usr/include/wasmedge.framework/Headers/wasmedge.h"
+      - "/usr/wasmedge.framework/Headers/wasmedge.h"
+      - "/include/wasmedge.framework/Headers/wasmedge.h"
+      - "/usr/X11R6/include/wasmedge.framework/Headers/wasmedge.h"
+      - "/usr/X11R6/wasmedge.framework/Headers/wasmedge.h"
+      - "/usr/pkg/include/wasmedge.framework/Headers/wasmedge.h"
+      - "/usr/pkg/wasmedge.framework/Headers/wasmedge.h"
+      - "/opt/include/wasmedge.framework/Headers/wasmedge.h"
+      - "/opt/wasmedge.framework/Headers/wasmedge.h"
+      - "/sw/include/wasmedge.framework/Headers/wasmedge.h"
+      - "/sw/wasmedge.framework/Headers/wasmedge.h"
+      - "/opt/local/include/wasmedge.framework/Headers/wasmedge.h"
+      - "/opt/local/wasmedge.framework/Headers/wasmedge.h"
+      - "/usr/include/X11/wasmedge.framework/Headers/wasmedge.h"
+      - "/Users/mrhapile/Library/Frameworks/wasmedge.framework/Headers/wasmedge.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/wasmedge.framework/Headers/wasmedge.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/wasmedge.framework/Headers/wasmedge.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/wasmedge.framework/Headers/wasmedge.h"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/wasmedge.framework/Headers/wasmedge.h"
+      - "/Library/Frameworks/wasmedge.framework/Headers/wasmedge.h"
+      - "/Network/Library/Frameworks/wasmedge.framework/Headers/wasmedge.h"
+      - "/System/Library/Frameworks/wasmedge.framework/Headers/wasmedge.h"
+      - "/opt/homebrew/include/wasmedge.framework/Headers/wasmedge.h"
+      - "/usr/local/include/wasmedge.framework/Headers/wasmedge.h"
+      - "/usr/include/wasmedge.framework/Headers/wasmedge.h"
+      - "/Users/mrhapile/.wasmedge/include/wasmedge.framework/Headers/wasmedge.h"
+      - "/Users/mrhapile/.krew/bin/wasmedge/wasmedge.h"
+      - "/Users/mrhapile/.nvm/versions/node/v24.12.0/bin/wasmedge/wasmedge.h"
+      - "/Users/mrhapile/.antigravity/antigravity/bin/wasmedge/wasmedge.h"
+      - "/usr/local/bin/wasmedge/wasmedge.h"
+      - "/System/Cryptexes/App/usr/bin/wasmedge/wasmedge.h"
+      - "/usr/bin/wasmedge/wasmedge.h"
+      - "/bin/wasmedge/wasmedge.h"
+      - "/usr/sbin/wasmedge/wasmedge.h"
+      - "/sbin/wasmedge/wasmedge.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/wasmedge/wasmedge.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/wasmedge/wasmedge.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/wasmedge/wasmedge.h"
+      - "/usr/local/go/bin/wasmedge/wasmedge.h"
+      - "/opt/homebrew/bin/wasmedge/wasmedge.h"
+      - "/Users/mrhapile/.cargo/bin/wasmedge/wasmedge.h"
+      - "/Users/mrhapile/.wasmedge/bin/wasmedge/wasmedge.h"
+      - "/Users/mrhapile/go/bin/wasmedge/wasmedge.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/wasmedge/wasmedge.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/wasmedge/wasmedge.h"
+    found: "/opt/homebrew/include/"
+    search_context:
+      ENV{PATH}:
+        - "/Users/mrhapile/.krew/bin"
+        - "/Users/mrhapile/.nvm/versions/node/v24.12.0/bin"
+        - "/Users/mrhapile/.antigravity/antigravity/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/go/bin"
+        - "/opt/homebrew/bin"
+        - "/Users/mrhapile/.krew/bin"
+        - "/Users/mrhapile/.nvm/versions/node/v24.12.0/bin"
+        - "/Users/mrhapile/.antigravity/antigravity/bin"
+        - "/Users/mrhapile/.cargo/bin"
+        - "/Users/mrhapile/.wasmedge/bin"
+        - "/Users/mrhapile/go/bin"
+        - "/Users/mrhapile/go/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "cmake/FindWasmEdge.cmake:13 (find_library)"
+      - "CMakeLists.txt:20 (find_package)"
+    mode: "library"
+    variable: "WASMEDGE_LIB"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "wasmedge"
+    candidate_directories:
+      - "/Users/mrhapile/.krew/bin/"
+      - "/Users/mrhapile/.nvm/versions/node/v24.12.0/bin/"
+      - "/Users/mrhapile/.antigravity/antigravity/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/go/bin/"
+      - "/opt/homebrew/bin/"
+      - "/Users/mrhapile/.cargo/bin/"
+      - "/Users/mrhapile/.wasmedge/bin/"
+      - "/Users/mrhapile/go/bin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/lib/"
+      - "/opt/homebrew/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/opt/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+      - "/opt/homebrew/lib/"
+      - "/usr/lib/"
+      - "/Users/mrhapile/.wasmedge/lib/"
+    searched_directories:
+      - "/Users/mrhapile/.krew/bin/"
+      - "/Users/mrhapile/.nvm/versions/node/v24.12.0/bin/"
+      - "/Users/mrhapile/.antigravity/antigravity/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/go/bin/"
+      - "/opt/homebrew/bin/"
+      - "/Users/mrhapile/.cargo/bin/"
+      - "/Users/mrhapile/.wasmedge/bin/"
+      - "/Users/mrhapile/go/bin/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+    found: "/opt/homebrew/lib/libwasmedge.dylib"
+    search_context:
+      ENV{PATH}:
+        - "/Users/mrhapile/.krew/bin"
+        - "/Users/mrhapile/.nvm/versions/node/v24.12.0/bin"
+        - "/Users/mrhapile/.antigravity/antigravity/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/go/bin"
+        - "/opt/homebrew/bin"
+        - "/Users/mrhapile/.krew/bin"
+        - "/Users/mrhapile/.nvm/versions/node/v24.12.0/bin"
+        - "/Users/mrhapile/.antigravity/antigravity/bin"
+        - "/Users/mrhapile/.cargo/bin"
+        - "/Users/mrhapile/.wasmedge/bin"
+        - "/Users/mrhapile/go/bin"
+        - "/Users/mrhapile/go/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+...

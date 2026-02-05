@@ -3,6 +3,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/wasmedge-verify.dir/src/cli.cpp.o.d"
   "CMakeFiles/wasmedge-verify.dir/src/main.cpp.o"
   "CMakeFiles/wasmedge-verify.dir/src/main.cpp.o.d"
+  "CMakeFiles/wasmedge-verify.dir/src/parse.cpp.o"
+  "CMakeFiles/wasmedge-verify.dir/src/parse.cpp.o.d"
+  "CMakeFiles/wasmedge-verify.dir/src/validate.cpp.o"
+  "CMakeFiles/wasmedge-verify.dir/src/validate.cpp.o.d"
   "wasmedge-verify"
   "wasmedge-verify.pdb"
 )
