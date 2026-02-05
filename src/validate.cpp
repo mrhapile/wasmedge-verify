@@ -6,26 +6,20 @@
 namespace wasmedge_verify {
 
 int runValidate(std::string_view filename) {
-  // Convert string_view to std::string to ensure null-termination for C API
-  std::string fileStr(filename);
+  std::string path(filename);
 
-  // 1. Create Configure Context
   WasmEdge_ConfigureContext *ConfCxt = WasmEdge_ConfigureCreate();
-
-  // 2. Create VM Context
-  // We do not register WASI or other host modules as per strict scope
-  // requirements.
   WasmEdge_VMContext *VMCxt = WasmEdge_VMCreate(ConfCxt, NULL);
+  WasmEdge_Result Res;
+  int ExitCode = 0;
 
   // 3. Load WASM from file
-  WasmEdge_Result Res = WasmEdge_VMLoadWasmFromFile(VMCxt, fileStr.c_str());
+  Res = WasmEdge_VMLoadWasmFromFile(VMCxt, path.c_str());
   if (!WasmEdge_ResultOK(Res)) {
-    std::cerr << "[FAIL] Failed to load WASM file: " << fileStr << "\n";
+    std::cerr << "[FAIL] Failed to load WASM file: " << path << "\n";
     std::cerr << "Error: " << WasmEdge_ResultGetMessage(Res) << "\n";
-
-    WasmEdge_VMDelete(VMCxt);
-    WasmEdge_ConfigureDelete(ConfCxt);
-    return 1;
+    ExitCode = 1;
+    goto cleanup;
   }
 
   // 4. Validate WASM
@@ -33,20 +27,16 @@ int runValidate(std::string_view filename) {
   if (!WasmEdge_ResultOK(Res)) {
     std::cerr << "[FAIL] WASM validation failed\n";
     std::cerr << "Error: " << WasmEdge_ResultGetMessage(Res) << "\n";
-
-    WasmEdge_VMDelete(VMCxt);
-    WasmEdge_ConfigureDelete(ConfCxt);
-    return 1;
+    ExitCode = 1;
+    goto cleanup;
   }
 
-  // 5. Success
   std::cout << "[OK] WASM validation passed\n";
 
-  // Cleanup
+cleanup:
   WasmEdge_VMDelete(VMCxt);
   WasmEdge_ConfigureDelete(ConfCxt);
-
-  return 0;
+  return ExitCode;
 }
 
 } // namespace wasmedge_verify
