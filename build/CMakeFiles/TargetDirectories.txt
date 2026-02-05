@@ -1,0 +1,3 @@
+/Users/mrhapile/project/wasmedge-verify/build/CMakeFiles/wasmedge-verify.dir
+/Users/mrhapile/project/wasmedge-verify/build/CMakeFiles/edit_cache.dir
+/Users/mrhapile/project/wasmedge-verify/build/CMakeFiles/rebuild_cache.dir
